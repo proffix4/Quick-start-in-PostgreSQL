@@ -1,0 +1,25 @@
+CREATE SCHEMA tsn_demo AUTHORIZATION postgres;
+
+CREATE TABLE IF NOT EXISTS tsn_demo.disk (
+    id smallint,
+    name_disk character varying(21) DEFAULT NULL::character varying,
+    price_sel numeric(7,2) DEFAULT NULL::numeric
+);
+
+
+ALTER TABLE tsn_demo.disk OWNER TO postgres;
+
+COPY tsn_demo.disk (id, name_disk, price_sel) FROM stdin;
+1	ОФИС 2019	500.00
+2	СУПЕРСИСТЕМНЫЙ ДИСК	600.00
+3	ENGLISH PLATINUM 2019	1200.00
+4	ALL STARS DISCO 2019	450.00
+5	ЗОЛОТАЯ БУХГАЛТЕРИЯ	1240.00
+6	ЗВЁЗДНЫЕ ВОЙНЫ	1300.00
+7	МАДАГАСКАР	1200.00
+8	WINDOWS 10	15000.00
+9	LINUX MINT	150.00
+10	LINUX UBUNTU	200.00
+22	Debian	111.00
+\.
+
