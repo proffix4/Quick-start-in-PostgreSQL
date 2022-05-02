@@ -1,14 +1,14 @@
 # Quick start in PostgreSQL
 
-Настройки сервера:
+**Настройки сервера:**
 
-host name: localhost
+host name: *localhost*
 
-port: 5432
+port: *5432*
 
-database: postgres
+database: *postgres*
 
-username: postgres
+username: *postgres*
 
-password: postgres
+password: *postgres*
 
